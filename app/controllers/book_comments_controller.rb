@@ -9,7 +9,7 @@ class BookCommentsController < ApplicationController
 
   def destroy
     BookComment.find(params[:id]).destroy
-    #上の文はなんだ？ @book.destroyの文の意味も入ってるやつ？一文になってるのかな？
+    #上の文なんだ？ @book.destroyの文の意味も入ってるやつ？一文になってるのかな？→合ってました
     redirect_to book_path(params[:book_id])
   end
 
